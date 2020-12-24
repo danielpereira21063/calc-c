@@ -8,7 +8,7 @@ void main(){
    while(execucao) {
       float n1, n2, result;
       char operacao;
-      printf("Calculadora\n");
+      printf("\nCalculadora\n");
       printf("-----------------------------------------------------------------------\n");
       printf("Digite o primeiro valor: ");
       scanf("%f", &n1);
