@@ -15,6 +15,7 @@ void main(){
       printf("\nDigite o segundo valor: ");
       scanf("%f", &n2);
       printf("\n");
+      operacao = ' ';
       while(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/'){
          printf("Qual operacao deseja fazer? [x] [+] [-] [/]: ");
          scanf(" %c", &operacao);
@@ -37,7 +38,7 @@ void main(){
       }
       printf("-----------------------------------------------------------------------\n");
       printf("Resultado: \n");
-      printf("Operacao: %.1f %c %.1f = %.1f\n\n", n1, operacao, n2, result);
+      printf("\nOperacao: %.1f %c %.1f = %.1f\n\n", n1, operacao, n2, result);
       printf("\n\n");
       continuar = ' ';
       while(continuar != 'S' && continuar != 's' && continuar != 'N' && continuar != 'n'){
