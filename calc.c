@@ -19,8 +19,8 @@ void main(){
       while(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/'){
          printf("Qual operacao deseja fazer? [x] [+] [-] [/]: ");
          scanf(" %c", &operacao);
-         if(operacao != 'x' || operacao != '+' || operacao != '-' || operacao != '/') {
-            printf("\n__Operacao invalida__\n");
+         if(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/') {
+            printf("\n'%c' nao e uma operacao valida\n", operacao);
          }
       }
       switch(operacao){
