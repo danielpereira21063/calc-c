@@ -19,6 +19,9 @@ void main(){
       while(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/'){
          printf("Qual operacao deseja fazer? [x] [+] [-] [/]: ");
          scanf(" %c", &operacao);
+         if(operacao != 'x' || operacao != '+' || operacao != '-' || operacao != '/') {
+            printf("\n__Operacao invalida__\n");
+         }
       }
       switch(operacao){
          case 'x':
@@ -50,4 +53,5 @@ void main(){
          printf("Fim da execucao do programa.\nEspero ve-lo(a) de novo em breve :)\n");
       }
    }
+   system("pause");
 }
