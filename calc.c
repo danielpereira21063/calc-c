@@ -1,13 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
 void main(){
-   char continuar = ' ';
    bool execucao = true;
    while(execucao) {
       float n1, n2, result;
       char operacao = ' ';
+      char continuar = ' ';
       printf("\nCalculadora\n");
       printf("-----------------------------------------------------------------------\n");
       printf("Digite o primeiro valor: ");
@@ -18,7 +17,7 @@ void main(){
       while(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/'){
          printf("Qual operacao deseja fazer? [x] [+] [-] [/]: ");
          scanf(" %c", &operacao);
-         if(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/') {
+         if(operacao != 'x' && operacao != '+' && operacao != '-' && operacao != '/'){
             printf("\n'%c' nao e uma operacao valida\n", operacao);
          }
       }
